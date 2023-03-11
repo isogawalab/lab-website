@@ -80,4 +80,8 @@ img {
     .container__w-70 {
         width: 90%;
     }
+
+    footer p {
+        font-size: 10px;
+    }
 }

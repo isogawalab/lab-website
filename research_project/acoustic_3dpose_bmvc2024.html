@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Isogawa Lab</title>
+  <!-- Bootstrap -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-black navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Isogawa Lab, Keio Univ.</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
+          class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"> <a class="nav-link" href="../index.html">Home</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="../research_proj.html">Research Projects <span
+                class="sr-only">(current)</span></a> </li>
+          <li class="nav-item"> <a class="nav-link" href="../members.html">People</a> </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="../publications.html" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Publications </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="../publications.html#award">Award</a>
+              <a class="dropdown-item" href="../publications.html#talks">Talks</a>
+              <a class="dropdown-item" href="../publications.html#journal">Journal Papers</a>
+              <a class="dropdown-item" href="../publications.html#int_conf">Conference Papers</a>
+              <a class="dropdown-item" href="../publications.html#jp_conf">Japanese Conference Papars</a>
+              <a class="dropdown-item" href="../publications.html#others">Others</a>
+            </div>
+          </li>
+          <li class="nav-item"> <a class="nav-link" href="https://sites.google.com/keio.jp/isogawa-lab-forb3">For B3</a>
+          </li>
+          <!-- <li class="nav-item"> <a class="nav-link" href="#">Contact</a> </li> -->
+        </ul>
+      </div>
+      <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
+    </div>
+  </nav>
+
+  <!-- Top image -->
+  <header>
+    <img src="../images/top.jpeg" />
+    <h1 class="text-center"><p class="d-inline-block mx-2">Isogawa Lab,</p><p class="d-inline-block">Keio University</p></h1>
+  </header>
+
+  <section>
+    <div class="container container__w-70">
+      <div class="row">
+        <div class="col-lg-12 mb-4 mt-2 text-center">
+        </div>
+        <div class="text-body">
+        <h3>Acoustic-based 3D Human Pose Estimation Robust to Human Position</h3>
+        <h5>Yusuke Oumi<span>&dagger;</span>, Yuto Shibata, Go Irie, Akisato Kimura, Yoshimitsu Aoki, and Mariko Isogawa<span>&dagger;&Dagger;</span></h5><p><span>&dagger;</span>corresponding author, <span>&Dagger;</span>project lead</p>
+        </br>
+        <p>
+          This paper explores the problem of 3D human pose estimation from only low-level acoustic signals. The existing active acoustic sensing-based approach for 3D human pose estimation implicitly assumes that the target user is positioned along a line between loud speakers and a microphone. Because reflection and diffraction of sound by the human body cause subtle acoustic signal changes compared to sound obstruction, the existing model degrades its accuracy significantly when subjects deviate from this line, limiting its practicality in real-world scenarios. To overcome this limitation, we propose a novel method composed of a position discriminator and reverberation-resistant model. The former predicts the standing positions of subjects and applies adversarial learning to ex tract subject position-invariant features. The latter utilizes acoustic signals before the estimation target time as references to enhance robustness against the variations in sound arrival times due to diffraction and reflection. We construct an acoustic pose estimation dataset that covers diverse human locations and demonstrate through experiments that our proposed method outperforms existing approaches.
+        </p>
+        <br>
+
+        <!-- Paper link -->
+        <h4>Paper (Arxiv)</h4>
+        <a href="https://arxiv.org/abs/2411.07165">
+          <!-- <img src="../images/papers/BMVC2024_AcousticPose.png" alt="" style="width:200px"></a> -->
+        <br><br>
+
+        <!-- Youtube video -->
+        <!-- <h4>Video</h4>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/IDvrSUautCI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <br></br> -->
+
+        <!-- Code and Dataset -->
+        <!-- <h4>Dataset</h4>
+        <a href="https://keio.box.com/shared/static/dc496qi861obz3a1olwtclxro61z4d5w.zip">Acoustic Signal Data (zip file, 2.8GB)</a><br>
+        <a href="https://keio.box.com/shared/static/2xcfg6r1zzdq32apl8498vv4hecekxjx.zip">Mocap Data (zip file, 170MB)</a><br>
+        <a href="https://keio.box.com/shared/static/dpurwpnfal1d7iq72xg8l729hiy5kqhf.zip">Meta files for Trimming the Acoustic Signal Data (zip file, 5KB)</a><br>
+        Due to a collaborative research agreement with our research partner, the dataset captured in the Anechoic chamber room cannot be made publicly available.
+        <br><br> -->
+
+        <!-- <h4>Code</h4>
+        <a href="https://github.com/YutoShibata07/AcousticPose_Public">GitHub</a> -->
+
+        <br><br>
+
+        <!-- Bibtex -->
+        <h4>bibtex</h4>
+        <div class="py-5 mb-4 bg-secondary bg-opacity-10 rounded-3">
+            <pre><code>
+            @InProceedings{Oumi_BMVC2024,
+            author = {Oumi, Yusuke and Shibata, Yuto and Irie, Go and Kimura, Akisato and Aoki, Yoshimitsu and Isogawa, Mariko},
+            title = {Acoustic-based 3D Human Pose Estimation Robust to Human Position},
+            booktitle = {British Machine Vision Conference (BMVC)},
+            year = {2024},
+            pages={to appear}
+            }
+            </code></pre>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <footer class="text-center mt-4">
+    <div class="container container__w-70">
+      <div class="row">
+        <div class="col-12">
+          <p>Copyright © Isogawa Laboratory. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap-4.4.1.js"></script>
+</body>
+
+</html>

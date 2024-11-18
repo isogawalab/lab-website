@@ -51,7 +51,10 @@
   <!-- Top image -->
   <header>
     <img src="../images/top.jpeg" />
-    <h1 class="text-center"><p class="d-inline-block mx-2">Isogawa Lab,</p><p class="d-inline-block">Keio University</p></h1>
+    <h1 class="text-center">
+      <p class="d-inline-block mx-2">Isogawa Lab,</p>
+      <p class="d-inline-block">Keio University</p>
+    </h1>
   </header>
 
   <section>
@@ -60,42 +63,70 @@
         <div class="col-lg-12 mb-4 mt-2 text-center">
         </div>
         <div class="text-body">
-        <h3>Acoustic-based 3D Human Pose Estimation Robust to Human Position</h3>
-        <h5>Yusuke Oumi<span>&dagger;</span>, Yuto Shibata, Go Irie, Akisato Kimura, Yoshimitsu Aoki, and Mariko Isogawa<span>&dagger;</span></h5><p><span>&dagger;</span>corresponding author</p>
-        </br>
-        <p>
-          This paper explores the problem of 3D human pose estimation from only low-level acoustic signals. The existing active acoustic sensing-based approach for 3D human pose estimation implicitly assumes that the target user is positioned along a line between loud speakers and a microphone. Because reflection and diffraction of sound by the human body cause subtle acoustic signal changes compared to sound obstruction, the existing model degrades its accuracy significantly when subjects deviate from this line, limiting its practicality in real-world scenarios. To overcome this limitation, we propose a novel method composed of a position discriminator and reverberation-resistant model. The former predicts the standing positions of subjects and applies adversarial learning to ex tract subject position-invariant features. The latter utilizes acoustic signals before the estimation target time as references to enhance robustness against the variations in sound arrival times due to diffraction and reflection. We construct an acoustic pose estimation dataset that covers diverse human locations and demonstrate through experiments that our proposed method outperforms existing approaches.
-        </p>
-        <br>
+          <h3>Acoustic-based 3D Human Pose Estimation Robust to Human Position</h3>
+          <h5>Yusuke Oumi<span>&dagger;</span>, Yuto Shibata, Go Irie, Akisato Kimura, Yoshimitsu Aoki, and Mariko
+            Isogawa<span>&dagger;</span></h5>
+          <p><span>&dagger;</span>corresponding author</p>
+          </br>
+          <p>
+            This paper explores the problem of 3D human pose estimation from only low-level acoustic signals. The
+            existing active acoustic sensing-based approach for 3D human pose estimation implicitly assumes that the
+            target user is positioned along a line between loud speakers and a microphone. Because reflection and
+            diffraction of sound by the human body cause subtle acoustic signal changes compared to sound obstruction,
+            the existing model degrades its accuracy significantly when subjects deviate from this line, limiting its
+            practicality in real-world scenarios. To overcome this limitation, we propose a novel method composed of a
+            position discriminator and reverberation-resistant model. The former predicts the standing positions of
+            subjects and applies adversarial learning to ex tract subject position-invariant features. The latter
+            utilizes acoustic signals before the estimation target time as references to enhance robustness against the
+            variations in sound arrival times due to diffraction and reflection. We construct an acoustic pose
+            estimation dataset that covers diverse human locations and demonstrate through experiments that our proposed
+            method outperforms existing approaches.
+          </p>
+          <br>
 
-        <!-- Paper link -->
-        <h4>Paper (Arxiv)</h4>
-        <a href="https://arxiv.org/abs/2411.07165">
-          <!-- <img src="../images/papers/BMVC2024_AcousticPose.png" alt="" style="width:200px"> -->
-        </a>
-        <br><br>
+          <!-- Paper link -->
+          <h4>Paper (Arxiv)</h4>
+          <!-- <a href="https://arxiv.org/abs/2411.07165">
+          </a> -->
+          <a href="https://arxiv.org/pdf/2411.07165">
+            <img src="../images/papers/bmvc2024_AcousticPose.png" alt="" style="width:200px">
+            <!-- <img src="../images/papers/BMVC2024_AcousticPose.png" alt="" style="width:200px"> -->
+          </a>
+          <br><br>
 
-        <!-- Youtube video -->
-        <!-- <h4>Video</h4>
+          <h4>Poster</h4>
+          <!-- <img src="../images/papers/bmvc2024_poster.pdf" alt="" style="width:200px"> -->
+          <!-- <embed src="../images/papers/bmvc2024_poster.pdf" type="application/pdf" width="100%" height="100%"> -->
+          <a href="../images/papers/bmvc2024_poster.pdf">
+            <img src="../images/papers/bmvc2024_poster.png" alt="" style="width:200px">
+          </a>
+          <!-- <iframe src="../images/papers/bmvc2024_poster.pdf" width="50%" height="400px"
+            style="transform: scale(0.5); transform-origin: 0 0; border: 1px solid #ccc;"></iframe> -->
+
+          <br><br>
+
+
+          <!-- Youtube video -->
+          <!-- <h4>Video</h4>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/IDvrSUautCI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <br></br> -->
 
-        <!-- Code and Dataset -->
-        <!-- <h4>Dataset</h4>
+          <!-- Code and Dataset -->
+          <!-- <h4>Dataset</h4>
         <a href="https://keio.box.com/shared/static/dc496qi861obz3a1olwtclxro61z4d5w.zip">Acoustic Signal Data (zip file, 2.8GB)</a><br>
         <a href="https://keio.box.com/shared/static/2xcfg6r1zzdq32apl8498vv4hecekxjx.zip">Mocap Data (zip file, 170MB)</a><br>
         <a href="https://keio.box.com/shared/static/dpurwpnfal1d7iq72xg8l729hiy5kqhf.zip">Meta files for Trimming the Acoustic Signal Data (zip file, 5KB)</a><br>
         Due to a collaborative research agreement with our research partner, the dataset captured in the Anechoic chamber room cannot be made publicly available.
         <br><br> -->
 
-        <!-- <h4>Code</h4>
+          <!-- <h4>Code</h4>
         <a href="https://github.com/YutoShibata07/AcousticPose_Public">GitHub</a> -->
 
-        <br><br>
+          <br><br>
 
-        <!-- Bibtex -->
-        <h4>bibtex</h4>
-        <div class="py-5 mb-4 bg-secondary bg-opacity-10 rounded-3">
+          <!-- Bibtex -->
+          <h4>bibtex</h4>
+          <div class="py-5 mb-4 bg-secondary bg-opacity-10 rounded-3">
             <pre><code>
             @InProceedings{Oumi_BMVC2024,
             author = {Oumi, Yusuke and Shibata, Yuto and Irie, Go and Kimura, Akisato and Aoki, Yoshimitsu and Isogawa, Mariko},
@@ -105,9 +136,9 @@
             pages={to appear}
             }
             </code></pre>
+          </div>
         </div>
       </div>
-    </div>
 
   </section>
 
